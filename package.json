@@ -1,0 +1,18 @@
+{
+  "name": "pactumjs-api-cucumber-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate project using PactumJS and Cucumber for API automation testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test-publish": "cucumber-js --publish"
+  },
+  "author": "RV",
+  "license": "ISC",
+  "devDependencies": {
+    "pactum": "^3.1.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.2"
+  }
+}
