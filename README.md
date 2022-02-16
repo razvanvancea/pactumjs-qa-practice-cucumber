@@ -5,29 +5,6 @@ Boilerplate project to run REST API tests with [Cucumber](https://cucumber.io) a
 
 Reports https://reports.cucumber.io/
 
-## Sample Test Case
-
-```gherkin
-Feature: Regres
-
-  In order to keep Regres api stable
-  As a tester
-  I want to make sure that everything works as expected
-  
-  Scenario: Get A User With Id
-    Given I make a GET request to /api/users/{id}
-      And I set path param id to $S{UserId}
-     When I receive a response
-     Then I expect response should have a status 200
-      And I expect response should have a json like
-      """
-      {
-        "data": {
-          "id": 7
-        }
-      }
-      """
-```
 
 ## Running Tests
 
@@ -65,5 +42,5 @@ Sample Step Definitions
     I expect response should have a json schema at (.*)
     I expect response should have a body
     I expect response should have {string}
-    I store response at (.*) as (.*)
+    I create variable "(.*)" from "(.*)" response path
 ```
